@@ -409,3 +409,8 @@ void Widget::progress()
     emit wrongClapsCountChanged(wrongString);
     emit rightClapsCountChanged(rightString);
 }
+
+void Widget::on_horizontalSlider_2_valueChanged(int value)
+{
+    m_levelRequired = (qreal)value/(qreal)ui->horizontalSlider_2->maximum();
+}

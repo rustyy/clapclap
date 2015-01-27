@@ -40,6 +40,8 @@ private slots:
     void progress();
 
 
+    void on_horizontalSlider_2_valueChanged(int value);
+
 private:
     Ui::Widget *ui;
 
